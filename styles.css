@@ -1,0 +1,25 @@
+
+.normal {
+  color: rgb(18, 13, 61);
+  font-size: 8rem;
+}
+
+/* Cambie de color cuando la cesta es exactamente 10 */
+.hot {
+  color: red;
+  font-size: 8rem;
+  font-weight: bolder;
+}
+
+
+body {
+    background-image: url("images/NBA.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+	text-align: center;
+    color: orangered;
+    font-family: Arial, sans-serif;
+}
