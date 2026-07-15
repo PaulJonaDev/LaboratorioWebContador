@@ -3,7 +3,7 @@ const contadorVisual = document.getElementById('contador');
 const btnSumar = document.getElementById('btn-sumar');
 const btnRestar = document.getElementById('btn-restar');
 
-//  la variable cotandora
+// cotandor de cestas
 let cuenta = 0;
 
 
@@ -25,7 +25,10 @@ btnSumar.addEventListener("click", function () {
 });
 
 btnRestar.addEventListener("click", function () {
+  if(cuenta > 0){
     cuenta--;
+  }
     actualizarPantalla();
 });
+
 

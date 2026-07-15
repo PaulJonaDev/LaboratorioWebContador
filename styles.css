@@ -1,25 +1,132 @@
+h1{color: aliceblue;
+    font-size:60px;
+    text-shadow:3px 3px 8px black;
+}
 
+#contador{
+    text-shadow:4px 4px 10px black;
+}
 .normal {
   color: rgb(18, 13, 61);
   font-size: 8rem;
+  font-weight: bold;
 }
 
 /* Cambie de color cuando la cesta es exactamente 10 */
 .hot {
   color: red;
   font-size: 8rem;
-  font-weight: bolder;
+  font-weight: bold;
+  text-shadow: 0 0 20px yellow;
 }
 
 
-body {
+.textoBotones{
+    display:flex;
+    justify-content:center;
+    gap:90px;
+    color:white;
+    font-size:22px;
+    font-weight:bold;
+}
+
+body{
     background-image: url("images/NBA.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
 
-	text-align: center;
-    color: orangered;
     font-family: Arial, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    margin: 0;
+}
+
+.btnImagen{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.btnImagen img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    object-fit:cover;
+    transition:.3s;
+}
+
+.btnImagen img:hover{
+    transform:scale(1.1) rotate(8deg);
+}
+
+.aro{
+    width:120px;
+    height:120px;
+    border:8px solid red;
+    border-radius:50%;
+    background:transparent;
+    color:white;
+    font-size:45px;
+    font-weight:bold;
+    cursor:pointer;
+    position:relative;
+    transition:.3s;
+}
+
+.aro:hover{
+    transform:scale(1.08);
+}
+
+.aro::after{
+    content:"";
+    position:absolute;
+    width:60px;
+    height:35px;
+    left:50%;
+    top:100%;
+    transform:translateX(-50%);
+    border-left:3px solid white;
+    border-right:3px solid white;
+    border-bottom:3px solid white;
+    border-radius:0 0 20px 20px;
+}
+.contenedorBotones{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    margin-top:20px;
+	transform: translateY(-45px);
+	
+}
+
+.boton{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.boton p{
+    margin-top:10px;
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.btnImagen{
+    background:none;
+    border:none;
+    cursor:pointer;
+}
+
+
+.btnImagen img:hover{
+    transform:scale(1.1);
 }
